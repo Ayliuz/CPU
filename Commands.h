@@ -1,0 +1,15 @@
+// COMMANDS. H
+
+COM_DEF(push,1)
+COM_DEF(pop,2)
+COM_DEF(add,3)
+COM_DEF(mul,4)
+COM_DEF(jump,5)
+COM_DEF(ifg,6)
+COM_DEF(ifl,7)
+COM_DEF(ifeq,8)
+COM_DEF(call,9)
+COM_DEF(ret,10)
+COM_DEF(out,11)
+COM_DEF(:,50)
+COM_DEF(end,100)

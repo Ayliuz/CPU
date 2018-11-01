@@ -1,0 +1,100 @@
+# depslib dependency file v1.0
+1514140574 source:c:\users\zue26\documents\github\cpu\cpu\main.cpp
+	<iostream>
+
+1541022873 source:c:\users\zue26\documents\github\cpu\assembler.cpp
+	"D:\TX\TXlib.h"
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<assert.h>
+	<string.h>
+	<math.h>
+	<ctype.h>
+	"stack.h"
+	"text.h"
+	"Data.h"
+	"Commands.h"
+
+1539870985 d:\tx\txlib.h
+	<assert.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	<string.h>
+	<io.h>
+	<fcntl.h>
+	<math.h>
+	<process.h>
+	<signal.h>
+	<setjmp.h>
+	<locale.h>
+	<time.h>
+	<float.h>
+	<limits.h>
+	<vector>
+	<string>
+	<map>
+	<iostream>
+	<numeric>
+	<algorithm>
+	<exception>
+	<stdexcept>
+	<windows.h>
+	<windowsx.h>
+	<tlhelp32.h>
+	<shellapi.h>
+	<shlobj.h>
+	<cxxabi.h>
+	<unwind.h>
+	<stdarg.h>
+	<unistd.h>
+	<termios.h>
+	<conio.h>
+	<direct.h>
+	<shlobj.h>
+	<new.h>
+	<ntstatus.h>
+	<crtdbg.h>
+	<rtcapi.h>
+	<dbghelp.h>
+
+1540999126 c:\users\zue26\documents\github\cpu\stack.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<assert.h>
+	<string.h>
+	<math.h>
+	<ctype.h>
+
+1541022729 c:\users\zue26\documents\github\cpu\text.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<clocale>
+	<string.h>
+	<ctype.h>
+	<assert.h>
+	<math.h>
+
+1541018393 c:\users\zue26\documents\github\cpu\data.h
+	"Commands.h"
+
+1541025112 c:\users\zue26\documents\github\cpu\commands.h
+
+1541022787 source:c:\users\zue26\documents\github\cpu\text.cpp
+	"text.h"
+
+1540996395 source:c:\users\zue26\documents\github\cpu\stack.cpp
+	"stack.h"
+
+1540993608 source:c:\users\zue26\documents\github\cpu\main.cpp
+	<iostream>
+	"stack.h"
+	"text.h"
+	"Data.h"
+	"CPU.h"
+
+1540993594 c:\users\zue26\documents\github\cpu\cpu.h
+
