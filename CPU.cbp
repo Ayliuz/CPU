@@ -36,6 +36,7 @@
 		<Unit filename="Commands.h" />
 		<Unit filename="Data.h" />
 		<Unit filename="assembler.cpp" />
+		<Unit filename="disassembler.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="stack.cpp" />
 		<Unit filename="stack.h" />

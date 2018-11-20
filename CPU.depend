@@ -2,21 +2,11 @@
 1514140574 source:c:\users\zue26\documents\github\cpu\cpu\main.cpp
 	<iostream>
 
-1541022873 source:c:\users\zue26\documents\github\cpu\assembler.cpp
-	"D:\TX\TXlib.h"
-	<stdio.h>
-	<stdlib.h>
-	<iostream>
-	<assert.h>
-	<string.h>
-	<math.h>
-	<ctype.h>
-	"stack.h"
-	"text.h"
-	"Data.h"
+1542616881 source:c:\users\zue26\documents\github\cpu\assembler.cpp
+	"assembler.h"
 	"Commands.h"
 
-1539870985 d:\tx\txlib.h
+1542160431 d:\tx\txlib.h
 	<assert.h>
 	<stdlib.h>
 	<stdarg.h>
@@ -59,7 +49,7 @@
 	<rtcapi.h>
 	<dbghelp.h>
 
-1540999126 c:\users\zue26\documents\github\cpu\stack.h
+1541503860 c:\users\zue26\documents\github\cpu\stack.h
 	<stdio.h>
 	<stdlib.h>
 	<iostream>
@@ -68,7 +58,7 @@
 	<math.h>
 	<ctype.h>
 
-1541022729 c:\users\zue26\documents\github\cpu\text.h
+1541795747 c:\users\zue26\documents\github\cpu\text.h
 	<stdio.h>
 	<stdlib.h>
 	<iostream>
@@ -78,23 +68,57 @@
 	<assert.h>
 	<math.h>
 
-1541018393 c:\users\zue26\documents\github\cpu\data.h
+1542713011 c:\users\zue26\documents\github\cpu\data.h
 	"Commands.h"
 
-1541025112 c:\users\zue26\documents\github\cpu\commands.h
+1542713216 c:\users\zue26\documents\github\cpu\commands.h
 
-1541022787 source:c:\users\zue26\documents\github\cpu\text.cpp
+1541795993 source:c:\users\zue26\documents\github\cpu\text.cpp
 	"text.h"
 
-1540996395 source:c:\users\zue26\documents\github\cpu\stack.cpp
+1542616811 source:c:\users\zue26\documents\github\cpu\stack.cpp
 	"stack.h"
 
-1540993608 source:c:\users\zue26\documents\github\cpu\main.cpp
+1542713243 source:c:\users\zue26\documents\github\cpu\main.cpp
+	"D:\TX\TXlib.h"
 	<iostream>
 	"stack.h"
 	"text.h"
 	"Data.h"
+	"assembler.h"
 	"CPU.h"
 
-1540993594 c:\users\zue26\documents\github\cpu\cpu.h
+1542657824 c:\users\zue26\documents\github\cpu\cpu.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<assert.h>
+	<string.h>
+	<math.h>
+	<ctype.h>
+	<windows.h>
+	<float.h>
+	"stack.h"
+	"text.h"
+	"Data.h"
+
+1542591308 source:c:\users\zue26\documents\github\cpu\disassembler.cpp
+	"assembler.h"
+	"Commands.h"
+
+1542578804 c:\users\zue26\documents\github\cpu\assembler.h
+	<stdio.h>
+	<stdlib.h>
+	<iostream>
+	<assert.h>
+	<string.h>
+	<math.h>
+	<ctype.h>
+	"stack.h"
+	"text.h"
+	"Data.h"
+
+1542665254 source:c:\users\zue26\documents\github\cpu\cpu.cpp
+	"CPU.h"
+	"Commands.h"
 

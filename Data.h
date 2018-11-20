@@ -1,14 +1,21 @@
+// DATA. H
+
 #ifndef DATA_H_INCLUDED
 #define DATA_H_INCLUDED
 
-const char READNAME[] = "program.txt";
-const char COMNAME[]  = "done.asm";
+const char COMNAME[]  =     "done.asm";
+const char WRITENAME[] =    "log.txt";
+const char STACK_DUMP[] =   "dump.txt";
 typedef double cpu_type;
 
-#define COM_DEF(name,num) COM_##name = (num),
+const size_t com_size = sizeof(char) + sizeof(char) + sizeof(char) + sizeof(cpu_type);
+
+
+#define COM_DEF(name,num,oper,body) COM_##name = (num),
 ///Соответствие имён команд их номерам
 enum AllCommand
 {
+    COM_DEFAULT,
     #include "Commands.h"
     COM_MAX
 };

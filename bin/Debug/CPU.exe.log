@@ -6,59 +6,22 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Нарушение доступа к памяти.
 
-#15: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x0021DA08. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x760D94C0 в функции strlen(). Попытка прочесть данные по адресу 0x055BCE50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#11: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0xA678 (Main), errno: 22 (Invalid argument). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x71E8 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-# 4 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-# 5 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-# 6 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-# 7 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-# 8 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#13 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#14 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#15 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#16 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#17 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#18 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#19 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#20 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#21 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#22 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#23 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#28 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#29 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#30 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#31 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#32 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#33 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#34 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#35 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#36 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#37 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#38 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#43 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#44 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#45 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#46 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#47 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#48 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#49 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#50 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#51 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#52 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#53 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#58 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#59 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#60 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#61 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+# 0 0x760D94C0 in C:\WINDOWS\System32\msvcrt.dll: strlen()
+
+# 1 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -69,8 +32,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 21:21:07, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 21:23:37
+Compiled:	Nov 19 2018 03:21:19, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 04:26:27
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -82,30 +45,28 @@ TXLib соболезнует...
 
 Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
 
-ВНЕЗАПНО: Нарушение доступа к памяти.
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
 
-#15: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x0021DA08. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+Нарушение доступа к памяти.
 
-С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x760D94C0 в функции strlen(). Попытка прочесть данные по адресу 0x055BCE50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#12: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0xA678 (Main), errno: 22 (Invalid argument). 
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x71E8 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A17909 in C:\WINDOWS\System32\msvcrt.dll: realloc()
-# 4 0x74A1701A in C:\WINDOWS\System32\msvcrt.dll: calloc()
-# 5 0x66242F14 in D:\TX\Windows\MgwHelp32.dll: SymInitialize()
-#10 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#11 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#12 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#13 0x77152312 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlFreeHeap()
-#14 0x74A170B5 in C:\WINDOWS\System32\msvcrt.dll: free()
-#19 0x7717305A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlValidSecurityDescriptor()
-#20 0x7717302A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlValidSecurityDescriptor()
+# 0 0x760D94C0 in C:\WINDOWS\System32\msvcrt.dll: strlen()
+
+# 1 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -116,237 +77,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 21:21:07, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 21:23:37
-
-Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
-Directory:	C:\Users\zue26\Documents\GitHub\CPU
-
---------------------------------------------------
-
---------------------------------------------------
-TXLib соболезнует...
-
-Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
-
-ВНЕЗАПНО: Нарушение доступа к памяти.
-
-#17: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x0021DA08. Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
-
-С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
-
-#13: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0xA678 (Main), errno: 22 (Invalid argument). 
-
---------------------------------------------------
-Стек вызовов:
-
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-# 4 0x7717A226 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlCheckTokenCapability()
-# 5 0x7714ECA6 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlHashUnicodeString()
-# 6 0x77146C81 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAppendUnicodeStringToString()
-# 7 0x77146943 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-# 8 0x77146926 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-# 9 0x77146926 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-#10 0x77144097 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEqualSid()
-#11 0x77159AA9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEqualUnicodeString()
-#12 0x77159DDB in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAddRefActivationContext()
-#13 0x7715A324 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlFindActivationContextSectionGuid()
-#14 0x7714D173 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrGetProcedureAddressForCaller()
-#15 0x7714C4D4 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrResolveDelayLoadedAPI()
-#16 0x7715492A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#17 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-
---------------------------------------------------
-Developed with:
-
-The Dumb Artist Library (TX Library)
-TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
-Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
-See license on: http://txlib.ru
-
-TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 21:21:07, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 21:23:37
-
-Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
-Directory:	C:\Users\zue26\Documents\GitHub\CPU
-
---------------------------------------------------
-
---------------------------------------------------
-TXLib предупреждает:
-
-Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
-
-ВНЕЗАПНО: Нарушение доступа к памяти.
-
-#15: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x000ADA08. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
-
-#11: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x9F38 (Main), errno: 22 (Invalid argument). 
-
---------------------------------------------------
-Стек вызовов:
-
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-# 4 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-# 5 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-# 6 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-# 7 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-# 8 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#13 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#14 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#15 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#16 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#17 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#18 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#19 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#20 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#21 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#22 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#23 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#28 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#29 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#30 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#31 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#32 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#33 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#34 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#35 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#36 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#37 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#38 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#43 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#44 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#45 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#46 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#47 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#48 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-#49 0x74A1770B in C:\WINDOWS\System32\msvcrt.dll: realloc()
-#50 0x74A36C25 in C:\WINDOWS\System32\msvcrt.dll: lock()
-#51 0x74A4EBC1 in C:\WINDOWS\System32\msvcrt.dll: ungetwc()
-#52 0x74A43A65 in C:\WINDOWS\System32\msvcrt.dll: fsopen()
-#53 0x74A43AF2 in C:\WINDOWS\System32\msvcrt.dll: fopen()
-#58 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#59 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#60 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#61 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-
---------------------------------------------------
-Developed with:
-
-The Dumb Artist Library (TX Library)
-TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
-Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
-See license on: http://txlib.ru
-
-TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 22:03:14, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 22:03:19
-
-Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
-Directory:	C:\Users\zue26\Documents\GitHub\CPU
-
---------------------------------------------------
-
---------------------------------------------------
-TXLib соболезнует...
-
-Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
-
-ВНЕЗАПНО: Нарушение доступа к памяти.
-
-#15: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x000ADA08. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
-
-С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
-
-#12: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x9F38 (Main), errno: 22 (Invalid argument). 
-
---------------------------------------------------
-Стек вызовов:
-
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A17909 in C:\WINDOWS\System32\msvcrt.dll: realloc()
-# 4 0x74A1701A in C:\WINDOWS\System32\msvcrt.dll: calloc()
-# 5 0x66242F14 in D:\TX\Windows\MgwHelp32.dll: SymInitialize()
-#10 0x7716DE51 in C:\WINDOWS\SYSTEM32\ntdll.dll: EtwRegisterTraceGuidsW()
-#11 0x77172A5F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlUnwind()
-#12 0x7717C716 in C:\WINDOWS\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
-#13 0x77152312 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlFreeHeap()
-#14 0x74A170B5 in C:\WINDOWS\System32\msvcrt.dll: free()
-#19 0x7717305A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlValidSecurityDescriptor()
-#20 0x7717302A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlValidSecurityDescriptor()
-
---------------------------------------------------
-Developed with:
-
-The Dumb Artist Library (TX Library)
-TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
-Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
-See license on: http://txlib.ru
-
-TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 22:03:14, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 22:03:19
-
-Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
-Directory:	C:\Users\zue26\Documents\GitHub\CPU
-
---------------------------------------------------
-
---------------------------------------------------
-TXLib соболезнует...
-
-Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
-
-ВНЕЗАПНО: Нарушение доступа к памяти.
-
-#17: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x7715612F в функции RtlAllocateHeap(). Попытка прочесть данные по адресу 0x000ADA08. Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
-
-С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
-
-#13: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x9F38 (Main), errno: 22 (Invalid argument). 
-
---------------------------------------------------
-Стек вызовов:
-
-# 0 0x7715612F in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 1 0x771549C9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 2 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-# 3 0x74A172A0 in C:\WINDOWS\System32\msvcrt.dll: malloc()
-# 4 0x7717A226 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlCheckTokenCapability()
-# 5 0x7714ECA6 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlHashUnicodeString()
-# 6 0x77146C81 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAppendUnicodeStringToString()
-# 7 0x77146943 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-# 8 0x77146926 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-# 9 0x77146926 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrLoadDll()
-#10 0x77144097 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEqualSid()
-#11 0x77159AA9 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlEqualUnicodeString()
-#12 0x77159DDB in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAddRefActivationContext()
-#13 0x7715A324 in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlFindActivationContextSectionGuid()
-#14 0x7714D173 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrGetProcedureAddressForCaller()
-#15 0x7714C4D4 in C:\WINDOWS\SYSTEM32\ntdll.dll: LdrResolveDelayLoadedAPI()
-#16 0x7715492A in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-#17 0x7715483E in C:\WINDOWS\SYSTEM32\ntdll.dll: RtlAllocateHeap()
-
---------------------------------------------------
-Developed with:
-
-The Dumb Artist Library (TX Library)
-TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
-Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
-See license on: http://txlib.ru
-
-TXLib file:	D:\TX\TXlib.h
-Compiled:	Oct 31 2018 22:03:14, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Oct 31 2018 22:03:19
+Compiled:	Nov 19 2018 03:21:19, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 04:26:27
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -360,28 +92,28 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x410 (Main). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x1540 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop, 2)
-      5: COM_DEF(sum, 3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -392,8 +124,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:02:21, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:02:26
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:17:40
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -409,30 +141,30 @@ TXLib соболезнует...
 
 Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
 С помощью функции signal() вы можете сами обработать эту ошибку.
 
-#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x410 (Main). 
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x1540 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop, 2)
-      5: COM_DEF(sum, 3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -443,8 +175,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:02:21, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:02:26
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:17:39
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -458,28 +190,28 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x5BD4 (Main). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x2734 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop, 2)
-      5: COM_DEF(sum, 3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -490,8 +222,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:03:46, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:03:51
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:18:42
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -507,30 +239,30 @@ TXLib соболезнует...
 
 Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
 С помощью функции signal() вы можете сами обработать эту ошибку.
 
-#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x5BD4 (Main). 
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x2734 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop, 2)
-      5: COM_DEF(sum, 3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -541,8 +273,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:03:46, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:03:51
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:18:41
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -556,28 +288,28 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x30B0 (Main). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7A6C (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -588,8 +320,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:05:33, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:05:38
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:19:19
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -605,30 +337,30 @@ TXLib соболезнует...
 
 Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2C1 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
 С помощью функции signal() вы можете сами обработать эту ошибку.
 
-#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x30B0 (Main). 
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7A6C (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2C1 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index =  (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041B9F3 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -639,8 +371,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:05:33, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:05:38
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:19:19
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -654,28 +386,28 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2F5 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x95C (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x62A0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2F5 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index = (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041BA97 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -686,8 +418,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:07:58, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:08:03
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:22:03
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -703,30 +435,30 @@ TXLib соболезнует...
 
 Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2F5 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x004022B6 в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp на строке 59. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
 С помощью функции signal() вы можете сами обработать эту ошибку.
 
-#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x95C (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x62A0 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2F5 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x004022B6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/CPU.cpp (59):
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+     57:         int registr = *(ip + 2);
+     58:         memmove(&argum, ip + 3, sizeof(cpu_type));
+=>   59:         size_t index = (unsigned int) (*((cpu_type*) &argum));
+     60: 
+     61:         if (CHECK_RAM_SIZE(ARR_ARG, index) || CHECK_RAM_SIZE(ARR_REG, cpu->r[registr]))
 
-# 1 0x0041BA97 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
+# 1 0x0041C419 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22: 
 
 --------------------------------------------------
 Developed with:
@@ -737,8 +469,562 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:07:58, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:08:03
+Compiled:	Nov 19 2018 04:40:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:22:04
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x0041E651 в функции stack_is_OK() в файле C:/Users/zue26/Documents/GitHub/CPU/stack.cpp на строке 312. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x2278 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041E651 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_is_OK() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (312):
+
+    310:     for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
+    311:     {
+=>  312:         if ( isfinite(s->data[i]))
+    313:         {
+    314:             StackErNum = ERRORMEMORY;
+
+# 1 0x0041D55C in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_push() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (152):
+
+    150: {
+    151:     assert(s);
+=>  152:     if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    153: 
+    154:     if (s->StackSize + 1 < s->StackCapacity)
+
+# 2 0x004025BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (42):
+
+     40:         })
+     41: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   42: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     43: COM_DEF(jump,5, MARK, DO_MARK)
+     44: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 3 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 11:56:00, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:56:53
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x0041E651 в функции stack_is_OK() в файле C:/Users/zue26/Documents/GitHub/CPU/stack.cpp на строке 312. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x2278 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041E651 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_is_OK() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (312):
+
+    310:     for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
+    311:     {
+=>  312:         if ( isfinite(s->data[i]))
+    313:         {
+    314:             StackErNum = ERRORMEMORY;
+
+# 1 0x0041D55C in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_push() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (152):
+
+    150: {
+    151:     assert(s);
+=>  152:     if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    153: 
+    154:     if (s->StackSize + 1 < s->StackCapacity)
+
+# 2 0x004025BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (42):
+
+     40:         })
+     41: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   42: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     43: COM_DEF(jump,5, MARK, DO_MARK)
+     44: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 3 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 11:56:00, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 11:56:53
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x0041E651 в функции stack_is_OK() в файле C:/Users/zue26/Documents/GitHub/CPU/stack.cpp на строке 312. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x4600 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041E651 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_is_OK() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (312):
+
+    310:     for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
+    311:     {
+=>  312:         if ( isfinite(s->data[i]))
+    313:         {
+    314:             StackErNum = ERRORMEMORY;
+
+# 1 0x0041D55C in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_push() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (152):
+
+    150: {
+    151:     assert(s);
+=>  152:     if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    153: 
+    154:     if (s->StackSize + 1 < s->StackCapacity)
+
+# 2 0x004025BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (42):
+
+     40:         })
+     41: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   42: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     43: COM_DEF(jump,5, MARK, DO_MARK)
+     44: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 3 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 11:56:00, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 12:05:15
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x0041E651 в функции stack_is_OK() в файле C:/Users/zue26/Documents/GitHub/CPU/stack.cpp на строке 312. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x4600 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0041E651 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_is_OK() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (312):
+
+    310:     for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
+    311:     {
+=>  312:         if ( isfinite(s->data[i]))
+    313:         {
+    314:             StackErNum = ERRORMEMORY;
+
+# 1 0x0041D55C in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: stack_push() at C:/Users/zue26/Documents/GitHub/CPU/stack.cpp (152):
+
+    150: {
+    151:     assert(s);
+=>  152:     if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    153: 
+    154:     if (s->StackSize + 1 < s->StackCapacity)
+
+# 2 0x004025BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (42):
+
+     40:         })
+     41: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   42: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     43: COM_DEF(jump,5, MARK, DO_MARK)
+     44: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 3 0x0041C439 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 11:56:00, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 12:05:15
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026EB в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x6DF4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026EB in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C88D in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 17:35:17, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 17:35:39
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026EB в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x6DF4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026EB in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C88D in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 17:35:17, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 17:35:40
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026BF в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7CF4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C809 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 23:03:45, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 23:03:48
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026BF в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7CF4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C809 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 23:03:45, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 23:03:49
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026BF в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x5698 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C809 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 23:19:53, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 23:19:56
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Переполнение при операции с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_OVERFLOW (0xC0000091) при выполнении кода по адресу 0x004026BF в функции cpu_get_commands() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 50. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x5698 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004026BF in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: cpu_get_commands() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (50):
+
+     48:         })
+     49: COM_DEF(add,3, 0, PUSH(POP + POP);)
+=>   50: COM_DEF(mul,4, 0, PUSH(POP * POP);)
+     51: COM_DEF(jump,5, MARK, DO_MARK)
+     52: COM_DEF(ifg,6, MARK,  INITPOP; if(a < b) DO_MARK;)
+
+# 1 0x0041C809 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME))       printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n");
+     19:     if (disassembler(COMNAME, WRITENAME, LOG))   printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n");
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu))    printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n");
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 19 2018 23:19:53, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 19 2018 23:19:57
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -752,28 +1038,27 @@ TXLib предупреждает:
 
 ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2F5 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
-#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x4AAC (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x87C8 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2F5 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+# 6 0x0041CAAE in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-# 1 0x0041BA97 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
-
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
 
 --------------------------------------------------
 Developed with:
@@ -784,8 +1069,8 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:13:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:13:15
+Compiled:	Nov 20 2018 09:25:04, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:40:24
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU
@@ -801,30 +1086,29 @@ TXLib соболезнует...
 
 Недопустимая операция с плавающей точкой.
 
-#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x0041A2F5 в функции assembler() в файле C:/Users/zue26/Documents/GitHub/CPU/Commands.h на строке 3. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
 
 С помощью функции signal() вы можете сами обработать эту ошибку.
 
-#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FC2C0 (32-bit), Flags: Cmdre0, Thread: 0x4AAC (Main), GetLastError(): 2 (Не удается найти указанный файл). 
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x87C8 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
 
 --------------------------------------------------
 Стек вызовов:
 
-# 0 0x0041A2F5 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: assembler() at C:/Users/zue26/Documents/GitHub/CPU/Commands.h (3):
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
 
-      1: // COMMANDS. H
-      2: 
-=>    3: COM_DEF(push,1)
-      4: COM_DEF(pop,2)
-      5: COM_DEF(sum,3)
+# 6 0x0041CAAE in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
 
-# 1 0x0041BA97 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (9):
-
-      7: int main()
-      8: {
-=>    9:     printf("%i", assembler());
-     10:     return 0;
-     11: }
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
 
 --------------------------------------------------
 Developed with:
@@ -835,8 +1119,200 @@ Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
 See license on: http://txlib.ru
 
 TXLib file:	D:\TX\TXlib.h
-Compiled:	Nov  1 2018 00:13:11, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
-Started:	Nov 01 2018 00:13:15
+Compiled:	Nov 20 2018 09:25:04, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:40:24
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7A94 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
+
+# 6 0x0041CAE6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 20 2018 09:46:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:46:38
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x7A94 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
+
+# 6 0x0041CAE6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 20 2018 09:46:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:46:38
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x85BC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
+
+# 6 0x0041CAE6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 20 2018 09:46:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:48:24
+
+Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
+Directory:	C:\Users\zue26\Documents\GitHub\CPU
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x754A1812 в функции RaiseException(). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300], Instance: 0x004FE2C0 (32-bit), Flags: Cmdre0, Thread: 0x85BC (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x754A1812 in C:\WINDOWS\System32\KERNELBASE.dll: RaiseException()
+# 1 0x760F1D47 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 2 0x760F1B12 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 3 0x760F4344 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 4 0x760EE9F0 in C:\WINDOWS\System32\msvcrt.dll: modf()
+# 5 0x760E3C18 in C:\WINDOWS\System32\msvcrt.dll: sqrt()
+
+# 6 0x0041CAE6 in C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe: main() at C:/Users/zue26/Documents/GitHub/CPU/main.cpp (20):
+
+     18:     if (assembler(READNAME, COMNAME)) {                 printf("~~~~~~~~~~~Assemble error~~~~~~~~~~~~~~~~~\n"); END; }
+     19:     if (disassembler(COMNAME, WRITENAME, LOG)) {        printf("~~~~~~~~~~~Disassemble error~~~~~~~~~~~~~~~~~\n"); END; }
+=>   20:     if (cpu_get_commands(COMNAME, STACK_DUMP, &cpu)) {  printf("~~~~~~~~~~~CPU error~~~~~~~~~~~~~~~~~\n"); END; }
+     21: 
+     22:     cpu_Dtor(&cpu);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 105, Date: 2018-06-12 00:00:00 +0300]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	D:\TX\TXlib.h
+Compiled:	Nov 20 2018 09:46:34, GNU g++ 5.1.0, std=199711L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Nov 20 2018 09:48:25
 
 Run file:	C:\Users\zue26\Documents\GitHub\CPU\bin\Debug\CPU.exe
 Directory:	C:\Users\zue26\Documents\GitHub\CPU

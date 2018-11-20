@@ -1,5 +1,5 @@
-push 34322
-push [642]
-add
+in
+push 0
+div
 out
 end

@@ -1,0 +1,325 @@
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  0
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  1
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  2
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  3
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  4
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 1.000000
+         data[1] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  5
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 1.000000
+         data[1] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  6
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  7
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  8
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  57
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  58
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 2.000000
+         data[1] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  59
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 4.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  60
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 4.000000
+         data[1] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  61
+CPU->data:
+      Capacity = 10
+      Size = 3
+      data [0x132E478]:
+         data[0] = 4.000000
+         data[1] = 1.000000
+         data[2] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  62
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 4.000000
+         data[1] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  63
+CPU->data:
+      Capacity = 10
+      Size = 3
+      data [0x132E478]:
+         data[0] = 4.000000
+         data[1] = 1.000000
+         data[2] = 4.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  64
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 4.000000
+         data[1] = 4.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  65
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  66
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  9
+CPU->data:
+      Capacity = 10
+      Size = 0
+      data [0x132E478]:
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  10
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  11
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  12
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  67
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  68
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  69
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  70
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  71
+CPU->data:
+      Capacity = 10
+      Size = 3
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = 2.000000
+         data[2] = -1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  72
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = -2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  73
+CPU->data:
+      Capacity = 10
+      Size = 3
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = -2.000000
+         data[2] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  74
+CPU->data:
+      Capacity = 10
+      Size = 4
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = -2.000000
+         data[2] = 2.000000
+         data[3] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  75
+CPU->data:
+      Capacity = 10
+      Size = 3
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = -2.000000
+         data[2] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  76
+CPU->data:
+      Capacity = 10
+      Size = 2
+      data [0x132E478]:
+         data[0] = 0.000000
+         data[1] = -1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  77
+CPU->data:
+      Capacity = 10
+      Size = 1
+      data [0x132E478]:
+         data[0] = 0.000000
+
+

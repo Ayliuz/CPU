@@ -1,4 +1,5 @@
-//stack.cpp
+// STACK. CPP
+
 #include "stack.h"
 
 //************************************
@@ -148,7 +149,7 @@ void stack_Clear(MyStack* s)
 void stack_push(MyStack* s, stack_type val)
 {
     assert(s);
-    if ( !stack_is_OK(s)) {DUMP(ErNum,s); abort();}
+    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
 
     if (s->StackSize + 1 < s->StackCapacity)
     {
@@ -164,7 +165,7 @@ void stack_push(MyStack* s, stack_type val)
 
     make_hash(s);
 
-    if ( !stack_is_OK(s)) {DUMP(ErNum,s); abort();}
+    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
 }
 
 //************************************
@@ -182,12 +183,12 @@ stack_type stack_pop(MyStack* s)
     assert(s);
     if(s->StackSize == 0)
     {
-        ErNum = 4;
-        DUMP(ErNum, s)
+        StackErNum = 4;
+        DUMP(StackErNum, s)
         return NAN;
     }
 
-    if ( !stack_is_OK(s)) {DUMP(ErNum,s); abort();}
+    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
 
     stack_type buf = s->data[--(s->StackSize)];
     s->data[(s->StackSize)] = NAN;
@@ -199,7 +200,7 @@ stack_type stack_pop(MyStack* s)
 
     make_hash(s);
 
-    if ( !stack_is_OK(s)) {DUMP(ErNum,s); abort();}
+    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
     return buf;
 
 }
@@ -294,8 +295,8 @@ int hash (void* s, unsigned int size)
 ///
 /// \param [in] struct MyStack* s - pointer to MyStack structure
 ///
-/// \return 1 if stack is fine 0 if not, changes the global variable ErNum (0 - all is right, 1 - data in stack is damaged, 2 - not suitable stack capacity, \
-3 - not suitable stack size, 5 - memory of stack data was damaged, 6 - memory of stack struct was damaged)
+/// \return 1 if stack is fine 0 if not, changes the global variable StackErNum (0 - all is right, ERRORDATA - data in stack is damaged, ERRORCAPACITY - not suitable stack capacity, \
+ERRORSIZE - not suitable stack size, ERRORMEMORY - memory of stack data was damaged, ERRORSTRUCT - memory of stack struct was damaged)
 ///
 //************************************
 
@@ -304,30 +305,30 @@ int stack_is_OK(MyStack* s)
     assert(s);
     int not_error = 1;
 
-    if ( !(s->data)){ ErNum = ERRORDATA; return 0;}
+    if ( !(s->data)){ StackErNum = ERRORDATA; return 0;}
 
     for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
     {
         if ( isfinite(s->data[i]))
         {
-            ErNum = ERRORMEMORY;
+            StackErNum = ERRORMEMORY;
             not_error = 0;
             break;
         }
     }
 
-    if ( !iszero(hash(s->data, sizeof(stack_type) * (s->StackCapacity)) - (s->StackHash_data))){                                                                                                             ErNum = ERRORDATA;      not_error = 0; }
+    if ( !iszero(hash(s->data, sizeof(stack_type) * (s->StackCapacity)) - (s->StackHash_data))){                                                                        StackErNum = ERRORDATA;      not_error = 0; }
 
-    if ( !iszero(*(s->data_guard_begin) - GUARD) || !iszero(*(s->data_guard_end) - GUARD)){                                                                             ErNum = ERRORMEMORY;    not_error = 0;}
+    if ( !iszero(*(s->data_guard_begin) - GUARD) || !iszero(*(s->data_guard_end) - GUARD)){                                                                             StackErNum = ERRORMEMORY;    not_error = 0;}
 
     int StackHashBuf = s->StackHash_stack;
     s->StackHash_stack = HASHDEFAULT;
-    if ( !iszero(hash(s, sizeof(*s)) - StackHashBuf) || ((s->stack_guard_begin) != GUARD) || ((s->stack_guard_end != GUARD))){                                          ErNum = ERRORSTRUCT;    not_error = 0;}
+    if ( !iszero(hash(s, sizeof(*s)) - StackHashBuf) || ((s->stack_guard_begin) != GUARD) || ((s->stack_guard_end != GUARD))){                                          StackErNum = ERRORSTRUCT;    not_error = 0;}
     s->StackHash_stack = StackHashBuf;
 
-    if ( !isfinite(s->StackCapacity) || ((s->StackCapacity) < StartCapacity) || (((s->StackCapacity) % StartCapacity) != 0) || ((s->StackSize) > (s->StackCapacity))){  ErNum = ERRORCAPACITY;  not_error = 0;}
+    if ( !isfinite(s->StackCapacity) || ((s->StackCapacity) < StartCapacity) || (((s->StackCapacity) % StartCapacity) != 0) || ((s->StackSize) > (s->StackCapacity))){  StackErNum = ERRORCAPACITY;  not_error = 0;}
 
-    if ( !isfinite(s->StackSize) || (((s->StackSize) > (s->StackCapacity)) && !isfinite(s->data[s->StackSize-1])) || isfinite(s->data[s->StackSize])) {                 ErNum = ERRORSIZE;      not_error = 0;}
+    if ( !isfinite(s->StackSize) || (((s->StackSize) > (s->StackCapacity)) && !isfinite(s->data[s->StackSize-1])) || isfinite(s->data[s->StackSize])) {                 StackErNum = ERRORSIZE;      not_error = 0;}
 
     return not_error;
 }
@@ -354,15 +355,15 @@ int test_error_size(const MyStack* stak)
     //
     s.StackSize = 20;
         UNERTEST(ERRORSIZE, &s)
-    ErNum = 0;
+    StackErNum = 0;
     //
     s.StackSize = 150;
         UNERTEST(ERRORSIZE, &s)
-    ErNum = 0;
+    StackErNum = 0;
     //
     s.StackSize = NAN;
         UNERTEST(ERRORSIZE, &s)
-    ErNum = 0;
+    StackErNum = 0;
 
     stack_Dtor(&s);
 
@@ -391,15 +392,15 @@ int test_error_capacity(const MyStack* stak)
 
     s.StackCapacity = 10;
         UNERTEST(ERRORCAPACITY, &s)
-    ErNum = 0;
+    StackErNum = 0;
     //
     s.StackCapacity = 77;
         UNERTEST(ERRORCAPACITY, &s)
-    ErNum = 0;
+    StackErNum = 0;
     //
     s.StackCapacity = NAN;
         UNERTEST(ERRORCAPACITY, &s)
-    ErNum = 0;
+    StackErNum = 0;
 
     stack_Dtor(&s);
 
@@ -430,25 +431,25 @@ int test_error_data(const MyStack* stak)
     stack_type buf = s.data[41];
     s.data[41] = 90;
         UNERTEST(ERRORDATA, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data[41] = buf;
 
     buf = s.data[1];
     s.data[1] = 92020;
         UNERTEST(ERRORDATA, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data[1] = buf;
 
     buf = s.data[20];
     s.data[20] = 12340;
         UNERTEST(ERRORDATA, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data[20] = buf;
 
     void* buf_point = s.data;
     s.data = NULL;
         UNERTEST(ERRORDATA, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data = (stack_type*) buf_point;
 
     stack_Dtor(&s);
@@ -479,12 +480,12 @@ int test_error_memory(const MyStack* stak)
 
     *(s.data_guard_begin) = 500;
         UNERTEST(ERRORMEMORY, &s)
-    ErNum = 0;
+    StackErNum = 0;
     *(s.data_guard_begin) = GUARD;
 
     *(s.data_guard_end) = -2200;
         UNERTEST(ERRORMEMORY, &s)
-    ErNum = 0;
+    StackErNum = 0;
     *(s.data_guard_end) = GUARD;
 
     stack_Dtor(&s);
@@ -515,29 +516,29 @@ int test_error_stackbuf(const MyStack* stak)
     void* buf_point = s.data;
     s.data += 3;
         UNERTEST(ERRORSTRUCT, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data = (stack_type*) buf_point;
 
     buf_point = s.data_guard_begin;
     s.data_guard_begin += 5;
         UNERTEST(ERRORSTRUCT, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data_guard_begin = (stack_type*) buf_point;
 
     buf_point = s.data_guard_end;
     s.data_guard_end -= 50;
         UNERTEST(ERRORSTRUCT, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.data_guard_end = (stack_type*) buf_point;
 
     s.stack_guard_begin = 432200;
         UNERTEST(ERRORSTRUCT, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.stack_guard_begin = GUARD;
 
     s.stack_guard_end = -4352328;
         UNERTEST(ERRORSTRUCT, &s)
-    ErNum = 0;
+    StackErNum = 0;
     s.stack_guard_end = GUARD;
 
     stack_Dtor(&s);

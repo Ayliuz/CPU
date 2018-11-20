@@ -1,4 +1,5 @@
-//stack.h
+// STACK. H
+
 #ifndef STACK_H_INCLUDED
 #define STACK_H_INCLUDED
 
@@ -47,7 +48,7 @@
                                 printf("   Data_guard_begin    = %s\n~", iszero(*((stack)->data_guard_begin) - GUARD) ? "GUARD": "ERROR");\
                                 printf("   Data_guard_end      = %s\n~",   iszero(*((stack)->data_guard_end) - GUARD) ? "GUARD": "ERROR");\
                                 printf("   INFO: \n~");\
-                                switch (ErNum)\
+                                switch (ERRNUMBER)\
                                 { \
                                     case ERROROK:\
                                         printf("      Stack is OK\n~");\
@@ -81,18 +82,18 @@
                                     {\
                                         printf("~Error in testing: in File: %s\n~In Line: %d\n~In Function: %s\n", __FILE__, __LINE__, __FUNCTION__);\
                                         printf("~Test result " #result " = %f is not correct ( != %f)", result, wanted);\
-                                        ErNum = ERRORPOP;\
-                                        DUMP (ErNum,stak)\
-                                        ErNum =0;\
+                                        StackErNum = ERRORPOP;\
+                                        DUMP (StackErNum,stak)\
+                                        StackErNum =0;\
                                         return 0;\
                                     }\
                             }
 #define UNERTEST(ErrorName, stak){\
-                                if ((stack_is_OK(stak) != 0) || (ErNum != ErrorName))\
+                                if ((stack_is_OK(stak) != 0) || (StackErNum != ErrorName))\
                                 {\
-                                    printf("~In %s, line %d, function: %s\n   ~Error in stack_is_OK(with error code " #ErrorName " = %d), error code = %d\n", __FILE__,  __LINE__, __FUNCTION__, ErrorName, ErNum);\
-                                    DUMP (ErNum,(stak))\
-                                    ErNum = 0;\
+                                    printf("~In %s, line %d, function: %s\n   ~Error in stack_is_OK(with error code " #ErrorName " = %d), error code = %d\n", __FILE__,  __LINE__, __FUNCTION__, ErrorName, StackErNum);\
+                                    DUMP (StackErNum,(stak))\
+                                    StackErNum = 0;\
                                     return 0;\
                                 }\
                                 \
@@ -101,7 +102,7 @@ typedef double stack_type;
 typedef struct MyStack MyStack;
 
 const unsigned int StartCapacity = 10;
-static int ErNum = ERROROK;
+static int StackErNum = ERROROK;
 
 struct MyStack
 {

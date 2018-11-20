@@ -1,0 +1,35 @@
+in r1
+push r1
+call factor
+out
+end
+
+:factor
+
+push 0
+ifeq endfact
+pop
+
+push 1
+ifeq endfact
+pop
+
+call decrem
+
+call factor
+mul
+ret
+
+
+
+:endfact
+pop
+ret
+
+:decrem
+pop r2
+push r2
+push r2
+push 1
+subtr
+ret

@@ -1,4 +1,4 @@
-//text.cpp
+//TEXT. CPP
 
 #include "text.h"
 
@@ -16,7 +16,9 @@ void text_Ctor(MyText* textobj)
 {
     assert(textobj);
 
+    free(textobj->text_table);
     textobj->text_table = (char**) calloc(StartLength, sizeof(*(textobj->text_table)));
+
     textobj->N_table = StartLength;
 
 }
@@ -35,9 +37,10 @@ void text_Dtor(MyText* textobj)
 {
     assert(textobj);
 
-    free_table(textobj->text_table, textobj->N_table);
-    free(textobj->text_table);
+    free_table(textobj->text_table, textobj->N_table, SINGLEMEM);
     textobj->N_table = -1;
+
+    free(textobj->text_table);
     free(textobj);
 
 }
@@ -56,9 +59,9 @@ void text_Dtor(MyText* textobj)
 char* read_from_file (const char *name, const char* mode)
 {
     FILE *txtfile = fopen (name, mode);
-    if (txtfile == NULL) return NULL;
+    if (!txtfile) return NULL;
 
-    int len_text = txt_file_length (txtfile);
+    int len_text = txt_file_length (name);
     char* text_memory = (char*) calloc (len_text, sizeof (*text_memory));
 
     if (fread (text_memory, sizeof (*text_memory), len_text, txtfile) <= 0) return NULL;
@@ -70,20 +73,22 @@ char* read_from_file (const char *name, const char* mode)
 //************************************
 /// Gives a text file's length.
 ///
-/// \param [in] FILE* txtpointer - file pointer
+/// \param [in] char* name - name of the file
 ///
-///
-///
-/// \return length of the file
+/// \return <int> length of the file
 ///
 //************************************
 
-int txt_file_length (FILE* txtpointer)
+int txt_file_length (const char *name)
 {
-    assert(txtpointer);
-    fseek (txtpointer, 0, SEEK_END);
-    int buf_len = ftell (txtpointer);
-    rewind (txtpointer);
+
+    FILE *txtfile = fopen (name, "r");
+    if (!txtfile) return 0;
+
+    fseek (txtfile, 0, SEEK_END);
+    int buf_len = ftell (txtfile);
+
+    fclose (txtfile);
     return buf_len;
 }
 
@@ -97,7 +102,7 @@ int txt_file_length (FILE* txtpointer)
         ADD - to add text to file normally as characters, \
         ADDBYTES- to add text to file as byte sequence,
 ///
-/// \return 1 if writing was successful
+/// \return 0 if writing was successful, 1 if not
 ///
 //************************************
 
@@ -106,15 +111,46 @@ int write_Text_to_file (const char* name, MyText* mytext, const char* mode)
     FILE *sort_txt = fopen (name, mode);
     assert (sort_txt && mytext);
 
-    for (int str = 0; str < mytext->N_table; ++str)
+    for (size_t str = 0; str < mytext->N_table; ++str)
     {
-        if (fputs (mytext->text_table[str], sort_txt) == EOF) return 0;
+        if (fputs (mytext->text_table[str], sort_txt) == EOF) return 1;
         fputc ('\n', sort_txt);
     }
     fputc ('\n', sort_txt);
 
     fclose (sort_txt);
-    return 1;
+    return 0;
+}
+
+//************************************
+/// Writes a text from a table of strings to file.
+///
+/// \param [in] char* name - name of the file to write
+/// \param [in] char** table - a pointer to a table of strings to write
+/// \param [in] unsigned int N_table - number of strings to write
+/// \param [in] char* mode - a way how to write to the file: DELANDWRITE - to delete information in file and write normally as characters, \
+        DELANDWRITEBYTES - to delete information in file and write text as byte sequence, \
+        ADD - to add text to file normally as characters, \
+        ADDBYTES- to add text to file as byte sequence,
+///
+/// \return 0 if writing was successful, 1 if not
+///
+//************************************
+
+int write_table_to_file (const char* name, char** table, size_t N_table, const char* mode)
+{
+    FILE *sort_txt = fopen (name, mode);
+    assert (sort_txt && table);
+
+    for (size_t str = 0; str < N_table; ++str)
+    {
+        if (table[str] && fputs (table[str], sort_txt) == EOF) return 1;
+        fputc ('\n', sort_txt);
+    }
+    fputc ('\n', sort_txt);
+
+    fclose (sort_txt);
+    return 0;
 }
 
 //************************************
@@ -128,22 +164,21 @@ int write_Text_to_file (const char* name, MyText* mytext, const char* mode)
         ADD - to add text to file normally as characters, \
         ADDBYTES- to add text to file as byte sequence,
 ///
-/// \return 1 if writing was successful
+/// \return 0 if writing was successful, 1 if not
 ///
 //************************************
 
-int write_to_file (const char* name, char* txt, unsigned int len, const char* mode)
+int write_to_file (const char* name, char* txt, size_t len, const char* mode)
 {
     assert(name && txt && mode);
 
     FILE *sort_txt = fopen (name, mode);
     assert (sort_txt);
 
-    if (fwrite(txt, len, sizeof(*txt), sort_txt) < strlen(txt)) return 0;
-    fputc ('\n', sort_txt);
+    if (fwrite(txt, sizeof(*txt), len, sort_txt) != len) return 1;
 
     fclose (sort_txt);
-    return 1;
+    return 0;
 }
 
 //************************************
@@ -187,16 +222,16 @@ MyText* read_in_Text (const char *name, const char* mode)
 {
     assert(name && mode);
 
-    MyText* point = (MyText*) calloc(1,sizeof(*point));
-    text_Ctor(point);
+    MyText* text_pointer = (MyText*) calloc(1,sizeof(*text_pointer));
 
     char* file_text = read_from_file(name, mode);
+    if (!file_text) return NULL;
 
-    point->N_table = string_counter (file_text);
-    point->text_table = get_text_in_table(file_text);
+    text_pointer->N_table = string_counter (file_text);
+    text_pointer->text_table = get_text_in_table(file_text);
 
 
-    return point;
+    return text_pointer;
 }
 
 //************************************
@@ -227,21 +262,25 @@ int string_counter (char* txtpointer)
 /// Frees text's and string pointers' memory
 ///
 /// \param [in] char* *table - a pointer to an array with string pointers
-/// \param      [in] int n_table - a length of table[] array
+/// \param [in] int n_table - a length of table[] array
+/// \param [in] int mode - mode to free rows: SINGLEMEM if memory was single, OWNMEM if every row has its own memory
 ///
 /// \return void
 ///
 //************************************
 
 
-void free_table (char** table, int n_table)
+void free_table (char** table, int n_table, int mode)
 {
     assert(table);
 
     for (int i = 0; i < n_table; i++)
     {
-        memset (table[i], '\0', strlen(table[i]));
-
-        free (table[i]);
+        if (table[i])
+        {
+            memset (table[i], '\0', strlen(table[i]));
+        }
+        if (mode) { free(table[i]); table[i] = NULL;}
     }
+    free(*table);
 }
