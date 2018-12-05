@@ -46,7 +46,7 @@ pop
 pop
 push r2
 push 0
-ifeq ifc
+ifeq none
 pop
 push r3
 push -1
@@ -55,17 +55,6 @@ push r2
 div
 push 1	
 out
-out
-end
-
-:ifc
-push r3
-push 0
-ifeq inf
-jump none
-
-:inf
-push -1
 out
 end
 

@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CPU.cpp" />
 		<Unit filename="CPU.h" />
 		<Unit filename="Commands.h" />
 		<Unit filename="Data.h" />

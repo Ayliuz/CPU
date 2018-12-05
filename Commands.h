@@ -87,7 +87,7 @@ COM_DEF(div, 14, 0,
                 return 1;
             })
 COM_DEF(sqrt, 15, 0, PUSH(sqrt(POP));)
-
+COM_DEF(meow, 16, 0, printf("               )\\._.,--....,'``.       \n .b--.        /;   _.. \\   _\\  (`._ ,. \n`=,-,-'~~~   `----(,_..'--(,_..'`-.;.'\n");)
 #undef INITPOP
 #undef DEFAULT
 #undef DO_MARK

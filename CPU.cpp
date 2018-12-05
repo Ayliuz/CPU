@@ -51,6 +51,8 @@ void cpu_Dtor(CPU* cpu)
 
     stack_Dtor(cpu->func_calls);
     free(cpu->func_calls);
+
+    cpu = NULL;
 }
 
 //***********************************

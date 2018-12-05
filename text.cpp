@@ -41,8 +41,6 @@ void text_Dtor(MyText* textobj)
     textobj->N_table = -1;
 
     free(textobj->text_table);
-    free(textobj);
-
 }
 
 //************************************
@@ -209,7 +207,7 @@ char** get_text_in_table (char* text)
 }
 
 //************************************
-/// Reads the text from a file and puts it to Text object.
+/// Reads the text from a file and puts it to Text object. The memory should be freed.
 ///
 /// \param [in] char* name - the name of the file to  read from
 /// \param [in] char* mode - a way how to read from the file: READ - to read normally as characters, READBYTES - to read text as byte sequence

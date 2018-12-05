@@ -1,5 +1,4 @@
 in r1
-meow
 push r1
 call factor
 out

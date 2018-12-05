@@ -183,7 +183,7 @@ stack_type stack_pop(MyStack* s)
     assert(s);
     if(s->StackSize == 0)
     {
-        StackErNum = 4;
+        StackErNum = ERRORPOP;
         DUMP(StackErNum, s)
         return NAN;
     }
@@ -193,7 +193,7 @@ stack_type stack_pop(MyStack* s)
     stack_type buf = s->data[--(s->StackSize)];
     s->data[(s->StackSize)] = NAN;
 
-    if (((s->StackCapacity) >= 4 * (s->StackSize)) && (s->StackCapacity > 10))
+    if (((s->StackCapacity) >= 4 * (s->StackSize)) && (s->StackCapacity > StartCapacity))
     {
         stack_contract(s);
     }

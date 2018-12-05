@@ -29,6 +29,8 @@ int assembler(const char READNAME[], const char COMNAME[])
     free_table(marks, Program->N_table + 1, OWNMEM);
     free(marks);
     text_Dtor(Program);
+    free(Program);
+    Program = NULL;
     return 0;
 }
 

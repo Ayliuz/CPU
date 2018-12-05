@@ -2,7 +2,7 @@
 1514140574 source:c:\users\zue26\documents\github\cpu\cpu\main.cpp
 	<iostream>
 
-1542616881 source:c:\users\zue26\documents\github\cpu\assembler.cpp
+1542749694 source:c:\users\zue26\documents\github\cpu\assembler.cpp
 	"assembler.h"
 	"Commands.h"
 
@@ -71,17 +71,19 @@
 1542713011 c:\users\zue26\documents\github\cpu\data.h
 	"Commands.h"
 
-1542713216 c:\users\zue26\documents\github\cpu\commands.h
+1542917423 c:\users\zue26\documents\github\cpu\commands.h
 
-1541795993 source:c:\users\zue26\documents\github\cpu\text.cpp
+1542749602 source:c:\users\zue26\documents\github\cpu\text.cpp
 	"text.h"
 
-1542616811 source:c:\users\zue26\documents\github\cpu\stack.cpp
+1542835403 source:c:\users\zue26\documents\github\cpu\stack.cpp
 	"stack.h"
 
-1542713243 source:c:\users\zue26\documents\github\cpu\main.cpp
+1542921454 source:c:\users\zue26\documents\github\cpu\main.cpp
 	"D:\TX\TXlib.h"
 	<iostream>
+	<stdio.h>
+	<stdlib.h>
 	"stack.h"
 	"text.h"
 	"Data.h"
@@ -102,7 +104,7 @@
 	"text.h"
 	"Data.h"
 
-1542591308 source:c:\users\zue26\documents\github\cpu\disassembler.cpp
+1542921178 source:c:\users\zue26\documents\github\cpu\disassembler.cpp
 	"assembler.h"
 	"Commands.h"
 
@@ -118,7 +120,7 @@
 	"text.h"
 	"Data.h"
 
-1542665254 source:c:\users\zue26\documents\github\cpu\cpu.cpp
+1542748576 source:c:\users\zue26\documents\github\cpu\cpu.cpp
 	"CPU.h"
 	"Commands.h"
 

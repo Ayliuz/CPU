@@ -1,5 +1,7 @@
 #include "D:\TX\TXlib.h"
 #include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
 #include "stack.h"
 #include "text.h"
 #include "Data.h"
@@ -7,11 +9,11 @@
 #include "CPU.h"
 
 #define END cpu_Dtor(&cpu); return 1;
-const char READNAME[] =     "square.txt";
+const char READNAME[] = "factor.txt";
 
 int main()
 {
-    txSetConsoleAttr (0xf0);
+    please txSetConsoleAttr (0xf0);
 
     CPU cpu;
     cpu_Ctor(&cpu);
