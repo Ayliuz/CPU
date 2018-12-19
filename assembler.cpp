@@ -15,7 +15,7 @@
 int assembler(const char READNAME[], const char COMNAME[])
 {
     MyText* Program = read_in_Text(READNAME, READ);
-    if (!Program) {                                                                       printf("~Error in reading from \"%s\" file\n", READNAME); return 1;}
+    if (!Program) {                                                                      printf("~Error in reading from \"%s\" file\n", READNAME); return 1;}
 
     char* assembl = (char*) calloc (Program->N_table * com_size + 1, sizeof (*assembl));
     char** marks = (char**) calloc (Program->N_table + 1, sizeof(*marks));

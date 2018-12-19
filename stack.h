@@ -123,23 +123,30 @@ struct MyStack
 };
 
 int iszero(const double x);
-void stack_Ctor(MyStack*);
-void set_guards(MyStack*);
-void stack_Dtor(MyStack*);
-void stack_Clear(MyStack*);
-void stack_push(MyStack*, stack_type);
-stack_type stack_pop(MyStack*);
-void stack_extend (MyStack*);
-void stack_contract (MyStack*);
-void make_hash (MyStack*);
-int hash (void*, unsigned int);
-int stack_is_OK(MyStack*);
-int test_stack(MyStack*);
-int test_error_size(const MyStack*);
-int test_error_capacity(const MyStack*);
-int test_error_data(const MyStack*);
-int test_error_memory(const MyStack*);
-int test_error_stackbuf(const MyStack*);
+
+void stack_Ctor(MyStack* stack);
+void set_guards(MyStack* stack);
+void stack_Dtor(MyStack* stack);
+
+void stack_Clear(MyStack* stack);
+
+void stack_push(MyStack* stack, stack_type val);
+stack_type stack_pop(MyStack* stack);
+
+void stack_extend (MyStack* stack);
+void stack_contract (MyStack* stack);
+
+void make_hash (MyStack* stack);
+int hash (void* object, unsigned int size);
+
+int stack_is_OK(MyStack* stack);
+int test_stack(MyStack* stack);
+
+int test_error_size(const MyStack* stack);
+int test_error_capacity(const MyStack* stack);
+int test_error_data(const MyStack* stack);
+int test_error_memory(const MyStack* stack);
+int test_error_stackbuf(const MyStack* stack);
 
 
 

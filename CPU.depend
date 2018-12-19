@@ -6,7 +6,7 @@
 	"assembler.h"
 	"Commands.h"
 
-1542160431 d:\tx\txlib.h
+1544129244 d:\tx\txlib.h
 	<assert.h>
 	<stdlib.h>
 	<stdarg.h>
@@ -49,7 +49,7 @@
 	<rtcapi.h>
 	<dbghelp.h>
 
-1541503860 c:\users\zue26\documents\github\cpu\stack.h
+1544033260 c:\users\zue26\documents\github\cpu\stack.h
 	<stdio.h>
 	<stdlib.h>
 	<iostream>
@@ -58,7 +58,7 @@
 	<math.h>
 	<ctype.h>
 
-1541795747 c:\users\zue26\documents\github\cpu\text.h
+1544033288 c:\users\zue26\documents\github\cpu\text.h
 	<stdio.h>
 	<stdlib.h>
 	<iostream>
@@ -76,7 +76,7 @@
 1542749602 source:c:\users\zue26\documents\github\cpu\text.cpp
 	"text.h"
 
-1542835403 source:c:\users\zue26\documents\github\cpu\stack.cpp
+1544017559 source:c:\users\zue26\documents\github\cpu\stack.cpp
 	"stack.h"
 
 1542921454 source:c:\users\zue26\documents\github\cpu\main.cpp

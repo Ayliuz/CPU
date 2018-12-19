@@ -19,99 +19,99 @@ int iszero( double x )
 //************************************
 /// Constructs MyStack structure and initialize it.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return void
 ///
 //************************************
 
-void stack_Ctor(MyStack* s)
+void stack_Ctor(MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    s->stack_guard_begin = GUARD;
-    s->stack_guard_end = GUARD;
+    stack->stack_guard_begin = GUARD;
+    stack->stack_guard_end = GUARD;
 
-    s->data = (stack_type*) calloc(StartCapacity + 2, sizeof(stack_type));
-    s->StackSize = 0;
-    s->StackCapacity = StartCapacity;
+    stack->data = (stack_type*) calloc(StartCapacity + 2, sizeof(stack_type));
+    stack->StackSize = 0;
+    stack->StackCapacity = StartCapacity;
 
-    set_guards(s);
+    set_guards(stack);
 
-    for (unsigned int i = 0; i < (s->StackCapacity); i++)
+    for (unsigned int i = 0; i < (stack->StackCapacity); i++)
     {
-        s->data[i] = NAN;
+        stack->data[i] = NAN;
     }
 
-    make_hash(s);
+    make_hash(stack);
 }
 
 //************************************
-/// Sets guards of the stack's array
+/// Sets guards of the stack'stack array
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return void
 ///
 //************************************
 
-void set_guards(MyStack* s)
+void set_guards(MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    s->data_guard_begin = s->data;
-    *(s->data_guard_begin) = GUARD;
+    stack->data_guard_begin = stack->data;
+    *(stack->data_guard_begin) = GUARD;
 
-    s->data = s->data + 1;
-    s->data_guard_end = s->data + s->StackCapacity;
-    *(s->data_guard_end) = GUARD;
+    stack->data = stack->data + 1;
+    stack->data_guard_end = stack->data + stack->StackCapacity;
+    *(stack->data_guard_end) = GUARD;
 }
 
 //************************************
 /// Deletes MyStack structure and its data.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return void
 ///
 //************************************
 
-void stack_Dtor(MyStack* s)
+void stack_Dtor(MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    for (;s->StackSize >= 1; s->StackSize --)
+    for (;stack->StackSize >= 1; stack->StackSize --)
     {
-        s->data[s->StackSize - 1] = NAN;
+        stack->data[stack->StackSize - 1] = NAN;
     }
 
-    free(s->data);
-    s->data = NULL;
+    free(stack->data);
+    stack->data = NULL;
 
-    s->StackSize = SIZEPOIS;
-    s->StackCapacity = SIZEPOIS;
+    stack->StackSize = SIZEPOIS;
+    stack->StackCapacity = SIZEPOIS;
 
-    s->StackHash_data = HASHPOIS;
-    s->StackHash_stack = HASHPOIS;
+    stack->StackHash_data = HASHPOIS;
+    stack->StackHash_stack = HASHPOIS;
 
-    *(s->data_guard_begin) = NAN;
-    *(s->data_guard_end) = NAN;
-    s->data_guard_begin = NULL;
-    s->data_guard_end = NULL;
+    *(stack->data_guard_begin) = NAN;
+    *(stack->data_guard_end) = NAN;
+    stack->data_guard_begin = NULL;
+    stack->data_guard_end = NULL;
 
-    s->stack_guard_begin = GUARDPOIS;
-    s->stack_guard_end = GUARDPOIS;
+    stack->stack_guard_begin = GUARDPOIS;
+    stack->stack_guard_end = GUARDPOIS;
 
-    s = NULL;
+    stack = NULL;
 }
 
 //************************************
-/// Clears MyStack structure's data.
+/// Clears MyStack structure'stack data.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return void
@@ -119,88 +119,88 @@ void stack_Dtor(MyStack* s)
 //************************************
 
 
-void stack_Clear(MyStack* s)
+void stack_Clear(MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    for (;s->StackSize >= 1; s->StackSize --)
+    for (;stack->StackSize >= 1; stack->StackSize --)
     {
-        s->data[s->StackSize - 1] = NAN;
+        stack->data[stack->StackSize - 1] = NAN;
     }
 
-    s->data = (stack_type*) realloc(s->data, (StartCapacity + 2) * sizeof(stack_type));
-    s->StackCapacity = StartCapacity;
+    stack->data = (stack_type*) realloc(stack->data, (StartCapacity + 2) * sizeof(stack_type));
+    stack->StackCapacity = StartCapacity;
 
-    set_guards(s);
+    set_guards(stack);
 
-    make_hash(s);
+    make_hash(stack);
 }
 
 //************************************
 /// Inserts an element on the top of stack
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return gives info about stack in console if there are any troubles
 ///
 //************************************
 
-void stack_push(MyStack* s, stack_type val)
+void stack_push(MyStack* stack, stack_type val)
 {
-    assert(s);
-    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    assert(stack);
+    if ( !stack_is_OK(stack)) {DUMP(StackErNum,stack); abort();}
 
-    if (s->StackSize + 1 < s->StackCapacity)
+    if (stack->StackSize + 1 < stack->StackCapacity)
     {
-        s->data[s->StackSize] = val;
-        s->StackSize ++;
+        stack->data[stack->StackSize] = val;
+        stack->StackSize ++;
     }
     else
     {
-        stack_extend(s);
-        s->data[s->StackSize] = val;
-        s->StackSize ++;
+        stack_extend(stack);
+        stack->data[stack->StackSize] = val;
+        stack->StackSize ++;
     }
 
-    make_hash(s);
+    make_hash(stack);
 
-    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    if ( !stack_is_OK(stack)) {DUMP(StackErNum,stack); abort();}
 }
 
 //************************************
 /// Takes one element from the top of stack
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 ///
 /// \return stack_type element from the top of the stack, gives info about stack in console if there are any troubles
 ///
 //************************************
 
-stack_type stack_pop(MyStack* s)
+stack_type stack_pop(MyStack* stack)
 {
-    assert(s);
-    if(s->StackSize == 0)
+    assert(stack);
+    if(stack->StackSize == 0)
     {
         StackErNum = ERRORPOP;
-        DUMP(StackErNum, s)
+        DUMP(StackErNum, stack)
         return NAN;
     }
 
-    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    if ( !stack_is_OK(stack)) {DUMP(StackErNum,stack); abort();}
 
-    stack_type buf = s->data[--(s->StackSize)];
-    s->data[(s->StackSize)] = NAN;
+    stack_type buf = stack->data[--(stack->StackSize)];
+    stack->data[(stack->StackSize)] = NAN;
 
-    if (((s->StackCapacity) >= 4 * (s->StackSize)) && (s->StackCapacity > StartCapacity))
+    if (((stack->StackCapacity) >= 4 * (stack->StackSize)) && (stack->StackCapacity > StartCapacity))
     {
-        stack_contract(s);
+        stack_contract(stack);
     }
 
-    make_hash(s);
+    make_hash(stack);
 
-    if ( !stack_is_OK(s)) {DUMP(StackErNum,s); abort();}
+    if ( !stack_is_OK(stack)) {DUMP(StackErNum,stack); abort();}
     return buf;
 
 }
@@ -208,79 +208,79 @@ stack_type stack_pop(MyStack* s)
 //************************************
 /// Extends the array in the stack.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return changes the size of arrow in stack.
 ///
 //************************************
 
-void stack_extend (MyStack* s)
+void stack_extend (MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    s->data = (stack_type*) realloc(s->data_guard_begin, ((s->StackCapacity) * 2 + 2) * sizeof(stack_type));
-    s->StackCapacity *= 2;
+    stack->data = (stack_type*) realloc(stack->data_guard_begin, ((stack->StackCapacity) * 2 + 2) * sizeof(stack_type));
+    stack->StackCapacity *= 2;
 
-    set_guards(s);
+    set_guards(stack);
 
-    for (unsigned int i = (s->StackSize); i < (s->StackCapacity); i++)
+    for (unsigned int i = (stack->StackSize); i < (stack->StackCapacity); i++)
     {
-        s->data[i] = NAN;
+        stack->data[i] = NAN;
     }
 }
 
 //************************************
 /// Contracts the array in the stack.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return changes the size of arrow in stack.
 ///
 //************************************
 
-void stack_contract (MyStack* s)
+void stack_contract (MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    s->data = (stack_type*) realloc(s->data_guard_begin, (s->StackCapacity / 2 + 2) * sizeof(stack_type) );
-    s->StackCapacity /= 2;
+    stack->data = (stack_type*) realloc(stack->data_guard_begin, (stack->StackCapacity / 2 + 2) * sizeof(stack_type) );
+    stack->StackCapacity /= 2;
 
-    set_guards(s);
+    set_guards(stack);
 }
 
 //************************************
 /// Hashes the  stack.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return changes StackHash_stack and StackHash_data in stack.
 ///
 //************************************
 
-void make_hash (MyStack* s)
+void make_hash (MyStack* stack)
 {
-    assert(s);
+    assert(stack);
 
-    s->StackHash_data = hash (s->data, s->StackCapacity * sizeof (stack_type));
-    s->StackHash_stack = HASHDEFAULT;
-    s->StackHash_stack = hash (s, sizeof (*s));
+    stack->StackHash_data = hash (stack->data, stack->StackCapacity * sizeof (stack_type));
+    stack->StackHash_stack = HASHDEFAULT;
+    stack->StackHash_stack = hash (stack, sizeof (*stack));
 }
 
 //************************************
 /// Hashes memory pointed by given pointer.
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return changes StackHash_data in stack.
 ///
 //************************************
 
-int hash (void* s, unsigned int size)
+int hash (void* stack, unsigned int size)
 {
-    assert(s);
+    assert(stack);
 
     int hashSum = 0;
-    for (char* p = (char*) s; p < (char*)(s + size); p++)
+    for (char* p = (char*) stack; p < (char*)(stack + size); p++)
     {
         hashSum = 22222 * hashSum  + abs(int(*p));
         hashSum = hashSum % 20002;
@@ -293,23 +293,23 @@ int hash (void* s, unsigned int size)
 //************************************
 /// Checks if stack is fine or not, and writes error code in global variable
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if stack is fine 0 if not, changes the global variable StackErNum (0 - all is right, ERRORDATA - data in stack is damaged, ERRORCAPACITY - not suitable stack capacity, \
 ERRORSIZE - not suitable stack size, ERRORMEMORY - memory of stack data was damaged, ERRORSTRUCT - memory of stack struct was damaged)
 ///
 //************************************
 
-int stack_is_OK(MyStack* s)
+int stack_is_OK(MyStack* stack)
 {
-    assert(s);
+    assert(stack);
     int not_error = 1;
 
-    if ( !(s->data)){ StackErNum = ERRORDATA; return 0;}
+    if ( !(stack->data)){ StackErNum = ERRORDATA; return 0;}
 
-    for (unsigned int i = s->StackSize + 1; i < s->StackCapacity; i++ )
+    for (unsigned int i = stack->StackSize + 1; i < stack->StackCapacity; i++ )
     {
-        if ( isfinite(s->data[i]))
+        if ( isfinite(stack->data[i]))
         {
             StackErNum = ERRORMEMORY;
             not_error = 0;
@@ -317,18 +317,18 @@ int stack_is_OK(MyStack* s)
         }
     }
 
-    if ( !iszero(hash(s->data, sizeof(stack_type) * (s->StackCapacity)) - (s->StackHash_data))){                                                                        StackErNum = ERRORDATA;      not_error = 0; }
+    if ( !iszero(hash(stack->data, sizeof(stack_type) * (stack->StackCapacity)) - (stack->StackHash_data))){                                                                        StackErNum = ERRORDATA;      not_error = 0; }
 
-    if ( !iszero(*(s->data_guard_begin) - GUARD) || !iszero(*(s->data_guard_end) - GUARD)){                                                                             StackErNum = ERRORMEMORY;    not_error = 0;}
+    if ( !iszero(*(stack->data_guard_begin) - GUARD) || !iszero(*(stack->data_guard_end) - GUARD)){                                                                             StackErNum = ERRORMEMORY;    not_error = 0;}
 
-    int StackHashBuf = s->StackHash_stack;
-    s->StackHash_stack = HASHDEFAULT;
-    if ( !iszero(hash(s, sizeof(*s)) - StackHashBuf) || ((s->stack_guard_begin) != GUARD) || ((s->stack_guard_end != GUARD))){                                          StackErNum = ERRORSTRUCT;    not_error = 0;}
-    s->StackHash_stack = StackHashBuf;
+    int StackHashBuf = stack->StackHash_stack;
+    stack->StackHash_stack = HASHDEFAULT;
+    if ( !iszero(hash(stack, sizeof(*stack)) - StackHashBuf) || ((stack->stack_guard_begin) != GUARD) || ((stack->stack_guard_end != GUARD))){                                          StackErNum = ERRORSTRUCT;    not_error = 0;}
+    stack->StackHash_stack = StackHashBuf;
 
-    if ( !isfinite(s->StackCapacity) || ((s->StackCapacity) < StartCapacity) || (((s->StackCapacity) % StartCapacity) != 0) || ((s->StackSize) > (s->StackCapacity))){  StackErNum = ERRORCAPACITY;  not_error = 0;}
+    if ( !isfinite(stack->StackCapacity) || ((stack->StackCapacity) < StartCapacity) || (((stack->StackCapacity) % StartCapacity) != 0) || ((stack->StackSize) > (stack->StackCapacity))){  StackErNum = ERRORCAPACITY;  not_error = 0;}
 
-    if ( !isfinite(s->StackSize) || (((s->StackSize) > (s->StackCapacity)) && !isfinite(s->data[s->StackSize-1])) || isfinite(s->data[s->StackSize])) {                 StackErNum = ERRORSIZE;      not_error = 0;}
+    if ( !isfinite(stack->StackSize) || (((stack->StackSize) > (stack->StackCapacity)) && !isfinite(stack->data[stack->StackSize-1])) || isfinite(stack->data[stack->StackSize])) {                 StackErNum = ERRORSIZE;      not_error = 0;}
 
     return not_error;
 }
@@ -336,7 +336,7 @@ int stack_is_OK(MyStack* s)
 //************************************
 /// Tests stack_is_OK in case of StackSize
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///
@@ -345,27 +345,27 @@ int stack_is_OK(MyStack* s)
 int test_error_size(const MyStack* stak)
 {
     assert(stak);
-    MyStack s = *stak;
-    stack_Ctor(&s);
+    MyStack stack = *stak;
+    stack_Ctor(&stack);
 
     for(double i = 2.01; i < 44.01; i = i + 1.0)
     {
-        stack_push((&s), 5.023 + i);
+        stack_push((&stack), 5.023 + i);
     }
     //
-    s.StackSize = 20;
-        UNERTEST(ERRORSIZE, &s)
+    stack.StackSize = 20;
+        UNERTEST(ERRORSIZE, &stack)
     StackErNum = 0;
     //
-    s.StackSize = 150;
-        UNERTEST(ERRORSIZE, &s)
+    stack.StackSize = 150;
+        UNERTEST(ERRORSIZE, &stack)
     StackErNum = 0;
     //
-    s.StackSize = NAN;
-        UNERTEST(ERRORSIZE, &s)
+    stack.StackSize = NAN;
+        UNERTEST(ERRORSIZE, &stack)
     StackErNum = 0;
 
-    stack_Dtor(&s);
+    stack_Dtor(&stack);
 
     return 1;
 }
@@ -373,7 +373,7 @@ int test_error_size(const MyStack* stak)
 //************************************
 /// Tests stack_is_OK in case of StackCapacity
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///
@@ -382,27 +382,27 @@ int test_error_size(const MyStack* stak)
 int test_error_capacity(const MyStack* stak)
 {
     assert(stak);
-    MyStack s = *stak;
-    stack_Ctor(&s);
+    MyStack stack = *stak;
+    stack_Ctor(&stack);
 
     for(double i = 2.01; i < 44.01; i = i + 1.0)
     {
-        stack_push((&s), 5.023 + i);
+        stack_push((&stack), 5.023 + i);
     }
 
-    s.StackCapacity = 10;
-        UNERTEST(ERRORCAPACITY, &s)
+    stack.StackCapacity = 10;
+        UNERTEST(ERRORCAPACITY, &stack)
     StackErNum = 0;
     //
-    s.StackCapacity = 77;
-        UNERTEST(ERRORCAPACITY, &s)
+    stack.StackCapacity = 77;
+        UNERTEST(ERRORCAPACITY, &stack)
     StackErNum = 0;
     //
-    s.StackCapacity = NAN;
-        UNERTEST(ERRORCAPACITY, &s)
+    stack.StackCapacity = NAN;
+        UNERTEST(ERRORCAPACITY, &stack)
     StackErNum = 0;
 
-    stack_Dtor(&s);
+    stack_Dtor(&stack);
 
     return 1;
 }
@@ -410,7 +410,7 @@ int test_error_capacity(const MyStack* stak)
 //************************************
 /// Tests stack_is_OK in case of data
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///
@@ -419,40 +419,40 @@ int test_error_capacity(const MyStack* stak)
 int test_error_data(const MyStack* stak)
 {
     assert(stak);
-    MyStack s = *stak;
-    stack_Ctor(&s);
+    MyStack stack = *stak;
+    stack_Ctor(&stack);
 
 
     for(double i = 2.01; i < 44.01; i = i + 1.0)
     {
-        stack_push((&s), 5.023 + i);
+        stack_push((&stack), 5.023 + i);
     }
 
-    stack_type buf = s.data[41];
-    s.data[41] = 90;
-        UNERTEST(ERRORDATA, &s)
+    stack_type buf = stack.data[41];
+    stack.data[41] = 90;
+        UNERTEST(ERRORDATA, &stack)
     StackErNum = 0;
-    s.data[41] = buf;
+    stack.data[41] = buf;
 
-    buf = s.data[1];
-    s.data[1] = 92020;
-        UNERTEST(ERRORDATA, &s)
+    buf = stack.data[1];
+    stack.data[1] = 92020;
+        UNERTEST(ERRORDATA, &stack)
     StackErNum = 0;
-    s.data[1] = buf;
+    stack.data[1] = buf;
 
-    buf = s.data[20];
-    s.data[20] = 12340;
-        UNERTEST(ERRORDATA, &s)
+    buf = stack.data[20];
+    stack.data[20] = 12340;
+        UNERTEST(ERRORDATA, &stack)
     StackErNum = 0;
-    s.data[20] = buf;
+    stack.data[20] = buf;
 
-    void* buf_point = s.data;
-    s.data = NULL;
-        UNERTEST(ERRORDATA, &s)
+    void* buf_point = stack.data;
+    stack.data = NULL;
+        UNERTEST(ERRORDATA, &stack)
     StackErNum = 0;
-    s.data = (stack_type*) buf_point;
+    stack.data = (stack_type*) buf_point;
 
-    stack_Dtor(&s);
+    stack_Dtor(&stack);
 
     return 1;
 }
@@ -460,7 +460,7 @@ int test_error_data(const MyStack* stak)
 //************************************
 /// Tests stack_is_OK in case of data memory
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///
@@ -469,26 +469,26 @@ int test_error_data(const MyStack* stak)
 int test_error_memory(const MyStack* stak)
 {
     assert(stak);
-    MyStack s = *stak;
-    stack_Ctor(&s);
+    MyStack stack = *stak;
+    stack_Ctor(&stack);
 
 
     for(double i = 2.01; i < 44.01; i = i + 1.0)
     {
-        stack_push((&s), 5.023 + i);
+        stack_push((&stack), 5.023 + i);
     }
 
-    *(s.data_guard_begin) = 500;
-        UNERTEST(ERRORMEMORY, &s)
+    *(stack.data_guard_begin) = 500;
+        UNERTEST(ERRORMEMORY, &stack)
     StackErNum = 0;
-    *(s.data_guard_begin) = GUARD;
+    *(stack.data_guard_begin) = GUARD;
 
-    *(s.data_guard_end) = -2200;
-        UNERTEST(ERRORMEMORY, &s)
+    *(stack.data_guard_end) = -2200;
+        UNERTEST(ERRORMEMORY, &stack)
     StackErNum = 0;
-    *(s.data_guard_end) = GUARD;
+    *(stack.data_guard_end) = GUARD;
 
-    stack_Dtor(&s);
+    stack_Dtor(&stack);
 
     return 1;
 }
@@ -496,7 +496,7 @@ int test_error_memory(const MyStack* stak)
 //************************************
 /// Tests stack_is_OK in case of struct memory
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///
@@ -505,43 +505,43 @@ int test_error_memory(const MyStack* stak)
 int test_error_stackbuf(const MyStack* stak)
 {
     assert(stak);
-    MyStack s = *stak;
-    stack_Ctor(&s);
+    MyStack stack = *stak;
+    stack_Ctor(&stack);
 
     for(double i = 2.01; i < 44.01; i = i + 1.0)
     {
-        stack_push((&s), 5.023 + i);
+        stack_push((&stack), 5.023 + i);
     }
 
-    void* buf_point = s.data;
-    s.data += 3;
-        UNERTEST(ERRORSTRUCT, &s)
+    void* buf_point = stack.data;
+    stack.data += 3;
+        UNERTEST(ERRORSTRUCT, &stack)
     StackErNum = 0;
-    s.data = (stack_type*) buf_point;
+    stack.data = (stack_type*) buf_point;
 
-    buf_point = s.data_guard_begin;
-    s.data_guard_begin += 5;
-        UNERTEST(ERRORSTRUCT, &s)
+    buf_point = stack.data_guard_begin;
+    stack.data_guard_begin += 5;
+        UNERTEST(ERRORSTRUCT, &stack)
     StackErNum = 0;
-    s.data_guard_begin = (stack_type*) buf_point;
+    stack.data_guard_begin = (stack_type*) buf_point;
 
-    buf_point = s.data_guard_end;
-    s.data_guard_end -= 50;
-        UNERTEST(ERRORSTRUCT, &s)
+    buf_point = stack.data_guard_end;
+    stack.data_guard_end -= 50;
+        UNERTEST(ERRORSTRUCT, &stack)
     StackErNum = 0;
-    s.data_guard_end = (stack_type*) buf_point;
+    stack.data_guard_end = (stack_type*) buf_point;
 
-    s.stack_guard_begin = 432200;
-        UNERTEST(ERRORSTRUCT, &s)
+    stack.stack_guard_begin = 432200;
+        UNERTEST(ERRORSTRUCT, &stack)
     StackErNum = 0;
-    s.stack_guard_begin = GUARD;
+    stack.stack_guard_begin = GUARD;
 
-    s.stack_guard_end = -4352328;
-        UNERTEST(ERRORSTRUCT, &s)
+    stack.stack_guard_end = -4352328;
+        UNERTEST(ERRORSTRUCT, &stack)
     StackErNum = 0;
-    s.stack_guard_end = GUARD;
+    stack.stack_guard_end = GUARD;
 
-    stack_Dtor(&s);
+    stack_Dtor(&stack);
 
     return 1;
 }
@@ -549,7 +549,7 @@ int test_error_stackbuf(const MyStack* stak)
 //************************************
 /// Tests stack
 ///
-/// \param [in] struct MyStack* s - pointer to MyStack structure
+/// \param [in] struct MyStack* stack - pointer to MyStack structure
 ///
 /// \return 1 if test was passed, 0 if not and calls for DUMP
 ///

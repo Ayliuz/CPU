@@ -3,7 +3,7 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 0
-      data [0x105E560]:
+      data [0x10EE1A0]:
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -11,7 +11,7 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 0
-      data [0x105E560]:
+      data [0x10EE1A0]:
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -19,8 +19,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -28,8 +28,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -37,8 +37,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
          data[1] = 0.000000
 
 
@@ -47,8 +47,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
          data[1] = 0.000000
 
 
@@ -57,8 +57,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -66,8 +66,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
          data[1] = 1.000000
 
 
@@ -76,8 +76,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
          data[1] = 1.000000
 
 
@@ -86,8 +86,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -95,8 +95,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -104,7 +104,7 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 0
-      data [0x105E560]:
+      data [0x10EE1A0]:
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -112,8 +112,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -121,9 +121,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -131,9 +131,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 6.000000
          data[2] = 1.000000
 
 
@@ -142,9 +142,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -152,9 +152,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -162,9 +162,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -172,9 +172,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
          data[2] = 0.000000
 
 
@@ -183,9 +183,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
          data[2] = 0.000000
 
 
@@ -194,9 +194,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -204,9 +204,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
          data[2] = 1.000000
 
 
@@ -215,9 +215,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
          data[2] = 1.000000
 
 
@@ -226,9 +226,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -236,9 +236,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -246,8 +246,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 5.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -255,9 +255,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -265,10 +265,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -276,10 +276,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 5.000000
          data[3] = 1.000000
 
 
@@ -288,10 +288,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -299,10 +299,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -310,10 +310,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -321,10 +321,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
          data[3] = 0.000000
 
 
@@ -333,10 +333,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
          data[3] = 0.000000
 
 
@@ -345,10 +345,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -356,10 +356,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
          data[3] = 1.000000
 
 
@@ -368,10 +368,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
          data[3] = 1.000000
 
 
@@ -380,10 +380,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -391,10 +391,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -402,9 +402,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -412,10 +412,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -423,11 +423,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -435,11 +435,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 4.000000
          data[4] = 1.000000
 
 
@@ -448,11 +448,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -460,11 +460,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -472,11 +472,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -484,11 +484,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
          data[4] = 0.000000
 
 
@@ -497,11 +497,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
          data[4] = 0.000000
 
 
@@ -510,11 +510,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -522,11 +522,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
          data[4] = 1.000000
 
 
@@ -535,11 +535,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
          data[4] = 1.000000
 
 
@@ -548,11 +548,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -560,11 +560,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -572,10 +572,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -583,11 +583,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -595,12 +595,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 3.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -608,12 +608,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 6
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 3.000000
          data[5] = 1.000000
 
 
@@ -622,12 +622,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -635,12 +635,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -648,12 +648,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -661,12 +661,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 6
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
          data[5] = 0.000000
 
 
@@ -675,12 +675,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 6
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
          data[5] = 0.000000
 
 
@@ -689,12 +689,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -702,12 +702,12 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 6
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
          data[5] = 1.000000
 
 
@@ -716,39 +716,263 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 6
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
          data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  11
+CPU->data:
+      Capacity = 10
+      Size = 5
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  12
+CPU->data:
+      Capacity = 10
+      Size = 5
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  18
+CPU->data:
+      Capacity = 10
+      Size = 4
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  19
+CPU->data:
+      Capacity = 10
+      Size = 5
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  20
+CPU->data:
+      Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  21
+CPU->data:
+      Capacity = 10
+      Size = 7
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 2.000000
+         data[6] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  22
+CPU->data:
+      Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  23
+CPU->data:
+      Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  13
+CPU->data:
+      Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  6
+CPU->data:
+      Capacity = 10
+      Size = 7
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+         data[6] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  7
+CPU->data:
+      Capacity = 10
+      Size = 7
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+         data[6] = 0.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  8
+CPU->data:
+      Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  9
+CPU->data:
+      Capacity = 10
+      Size = 7
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+         data[6] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  10
+CPU->data:
+      Capacity = 10
+      Size = 7
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+         data[6] = 1.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
      In command:  16
 CPU->data:
       Capacity = 10
-      Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
      In command:  17
 CPU->data:
       Capacity = 10
+      Size = 6
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+         data[5] = 1.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  14
+CPU->data:
+      Capacity = 10
       Size = 5
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
-         data[4] = 1.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
+
+
+In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
+     In command:  15
+CPU->data:
+      Capacity = 10
+      Size = 5
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 3.000000
+         data[4] = 2.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -756,11 +980,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -768,11 +992,11 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 4
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 3.000000
-         data[3] = 2.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 4.000000
+         data[3] = 6.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -780,10 +1004,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 6.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 24.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -791,10 +1015,10 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 3
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 4.000000
-         data[2] = 6.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 5.000000
+         data[2] = 24.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -802,9 +1026,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 24.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 120.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -812,9 +1036,9 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 2
-      data [0x105E560]:
-         data[0] = 5.000000
-         data[1] = 24.000000
+      data [0x10EE1A0]:
+         data[0] = 6.000000
+         data[1] = 120.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -822,8 +1046,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 120.000000
+      data [0x10EE1A0]:
+         data[0] = 720.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -831,8 +1055,8 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 1
-      data [0x105E560]:
-         data[0] = 120.000000
+      data [0x10EE1A0]:
+         data[0] = 720.000000
 
 
 In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
@@ -840,6 +1064,6 @@ In File:  C:\Users\zue26\Documents\GitHub\CPU\CPU.cpp
 CPU->data:
       Capacity = 10
       Size = 0
-      data [0x105E560]:
+      data [0x10EE1A0]:
 
 
