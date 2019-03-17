@@ -1,0 +1,8 @@
+hi, main ()
+	in(a)!
+	
+bye	
+
+hi, fact(arg)
+
+bye
