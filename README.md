@@ -1,2 +1,2 @@
 # CPU
-CPU realization on C
+nanoCPU realization on C
